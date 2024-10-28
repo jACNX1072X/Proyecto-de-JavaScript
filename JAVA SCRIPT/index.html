@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agregar Producto</title>
+    <link rel="stylesheet" href="C:\Users\Javi\Desktop\uni\semestre 2\algoritmos\JAVA SCRIPT\bootstrap.min.css">
+</head>
+<body>
+
+    <nav>
+        <h1>Agregar Producto</h1>
+    </nav>
+
+    <div class="container">
+        <h2>Agregar un producto</h2>
+        <form id="product-form">
+            <div>
+                <label for="name">Nombre de producto</label>
+                <input type="text" id="name" placeholder="Nombre del producto" required>
+            </div>
+            <div>
+                <label for="price">Precio de producto</label>
+                <input type="number" id="price" placeholder="Precio del producto" step="0.01" required>
+            </div>
+            <div>
+                <label for="year">Año de producto</label>
+                <input type="number" id="year" min="2000" value="2024" max="2030" required>
+            </div>
+            <button type="submit">Guardar Prod</button>
+        </form>
+
+        <div id="product-list">
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
